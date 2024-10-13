@@ -1,11 +1,18 @@
+.alata-regular {
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
 body{
     height: 100vh;
     width: 100%;
     margin: 0;
     padding: 0;
     color: white;
-    overflow-x: hidden;
     font-size: 10px;
+    font-family: "alata", sans-serif;
 }
 
 .nav-top{
@@ -20,6 +27,7 @@ body{
     padding: 0px 8% 0px 8%;
     box-sizing: border-box;
     font-size: 1rem;
+
 }
 
 .telefone-nav-top {
@@ -36,23 +44,22 @@ body{
 .nav-main{
     display: flex;
     flex-direction: row;
+    position: absolute;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    height: 80px;
+    height: auto;
     background-color: rgba(0, 36, 44, 0.55);
-    padding: 0px 8% 0px 8%;
+    padding: 10px 8% 10px 8%;
     box-sizing: border-box;
     max-width: 100vw;
     font-size: 1.2rem;
-    position: absolute;
+
+
 }
-
-
 
 .img-nav-main{
     width: 100px;
-    height: auto;
 }
 
 .info-nav-main{
@@ -66,7 +73,7 @@ body{
 }
 
 .button-nav-main{
-    padding: 10px 35px 10px 35px;
+    padding: 10px 35px;
     background-color: #79C942;
     border-radius: 5px;
     border: none;
@@ -79,13 +86,41 @@ body{
     flex-direction: column;
     background-color: #00242C;
     width: 100%;
-    height: 475px;   
-    background-image: url(img/close-up-huge-patterned-leaves.jpg);
+    height: 100vh;   
+    padding-top: 100px;
+    background-image: url(/img/close-up-huge-patterned-leaves.jpg);
     background-position: center;
     background-size: cover;
-    padding-top: 100px;
-    padding-left: 120px;
-    padding-top: 200px;
+ 
+    
+}
+
+.article-main a{
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    background-color: #79C942;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    text-decoration: none;
+}
+
+.button-article-main{
+   background-color: transparent;
+   border: none;
+   color: white;
+   font-size: 1rem;
+}
+
+.button-article-main:hover{
+    cursor: pointer;
+}
+
+.info-article-main{
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding: 10% 8% 0px 8%;
 }
 
 .article-main h1{
@@ -111,17 +146,14 @@ body{
     flex-direction: row;
     justify-content: center;
     color: black;
-    border: 1px solid red;
-    padding: 10%;
     align-items: center;
     height: auto;
     background-color: #EBEBEB;
-    padding: 0 8%;
+
 }
 
 .section-left{
     width: 40%;
-    border: 1px solid red;  
     margin-right: 5%;
 }
 
@@ -131,22 +163,24 @@ body{
 
 .section-right{
     width: 40%;
-    border: 1px solid red;
-    font-size: 1.2rem;
-    line-height: 25px;
+}
 
+.section-right p{
+    font-size: 1.5rem;
+    line-height: 35px;
+    padding: 10px 0px 20px 0px;
+    font-family: sans-serif;
 }
 
 .section-right h1{
     font-size: 2.2rem;
+    color: #4E9103;
 }
 
 .section-right h2{
     font-size: 1.5rem;
+    padding-left: 30px;
 }
-
-
-
 
 .titulo-text{
     display: flex;
@@ -155,4 +189,13 @@ body{
 
 .titulo-text img{
     width: 60px;
+}
+
+.button-article-two{
+    padding: 15px 40px 15px 40px;
+    font-size: 1.2rem;
+    background-color: #79C942;
+    border-radius: 5px;
+    border: none;
+    color: white;
 }
