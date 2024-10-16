@@ -1,3 +1,13 @@
+O que falta:
+
+- Fazer bloco do mapa
+
+- Fazer rodapé (a foto do começo do rodapé deve ser o ultimo elemento do bloco do mapa, para assim ele ter a cor de fundo azul)
+
+- Ver se seria possivel inves de utilizar o framework do carrosel, fazer uma barra de rolagem horizontal (igual a que se vai colocar no mapa, mas ele sendo vertical)
+
+- calcular largura de um celular e fazer uma barra de pesquisa inferior a partir dessa largura
+
 - color icone da pagina no meta, e colocar metas que ajuda na pesquisa pra falar na apresentação que isso ajudaria a empresa
 
-- Ao final de fazer toda a pagina, fazer a analise da pagin que o google oferece pelo inspensor de elemento
+- Ao final de fazer toda a pagina, fazer a analise da pagina que o google oferece pelo inspensor de elemento
