@@ -161,7 +161,6 @@ body{
     align-items: center;
     height: auto;
     background-color: #EBEBEB;
-
 }
 
 .section-left{
@@ -218,27 +217,68 @@ body{
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 100vh;
-    margin: 25px;
+    justify-content: space-evenly;    
+    height: 90vh;
+    color: black;
 }
 
 .article-three h1{
-    margin: 20px;
+    font-size: 2.3rem;
+
 }
 
 .carrosel{
     display: flex;
-    align-items: center;
-    background-color: #79C942;
-    height: 80%;
-    width: 85%;
-    border-radius: 20px;
-    align-content: center;
-    overflow: hidden;
+    flex-direction: row;
+    margin-left: 1000px;  
+    /* margin left apenas para vizualização dos blocos, retirar quando for fazer a barra de rolagem */
+    margin-bottom: 30px;
 }
 
-.carrosel img{
-    display: block;
-    object-fit: cover;
+.card-carrosel{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 500px;
+    height: 400px;
+    background-color: #4E9103;
+    color: white;
+    padding: 20px 40px;
+    font-size: 1.6rem;
+    margin: 15px;
+    border-radius: 15px;
 }
+
+.card-carrosel h2{
+    font-size: 2.5rem;
+
+}
+
+
+#card-one{
+    background-image: url(/img/card_page-0001.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#card-two{
+    background-image: url(/img/card_page-0002.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#card-three{
+    background-image: url(/img/card_page-0003.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#card-three p{
+    font-size: 1.4rem;
+}
+#card-four{
+    background-image: url(/img/card_page-0004.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+
 
