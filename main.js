@@ -10,3 +10,10 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+
+const button = document.getElementById('button-article-four')
+
+button.addEventListener("click", function(event) {
+  event.preventDefault()
+})
