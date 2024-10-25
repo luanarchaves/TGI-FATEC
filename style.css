@@ -397,6 +397,8 @@ body{
     background-color: #79C942;
     border-radius: 100%;
     cursor: pointer;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 2);
+
 }
 
 .input img{
@@ -426,9 +428,52 @@ body{
     border-radius: 50px;
     font-weight: lighter;
     cursor: pointer;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 2);
+
+}
+
+.mensagem{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 350px;
+    height: 430px;
+    background-color: #79C942;
+    border-radius: 10px;
+    padding: 30px 50px;
+    text-align: center;
+
+    margin-top: 77%;
+    margin-left: 35%;
+    /* precisa centralizar na tela, na parte que o usuario estiver */
+}
+
+.mensagem h1{
+    margin: 0;
+}
+
+.mensagem p, a{
+    font-size: 1rem;
+    font-weight: lighter;
 }
 
 
+.mensagem img{
+    width: 80px;
+}
+
+.mensagemFechar{
+    padding: 15px 40px 15px 40px;
+    font-size: 1.2rem;
+    background-color: #EBEBEB;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 1rem;
+    color: rgba(0, 0, 0, 0.84);
+    cursor: pointer;
+
+}
 
 .form-section-three{
     display: flex;
@@ -565,4 +610,5 @@ body{
 
 .section-two-article-five img{
     width: 30px;
+    color:#009200
 }

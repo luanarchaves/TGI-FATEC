@@ -157,6 +157,7 @@
                 <h3 class="options-section-two">Twitter</h3>
                 <h3 class="options-section-two">Google+</h3>
                 <h3 class="options-section-two">Indicação</h3>
+                <h3 class="options-section-two">Linkedin</h3>
                 <h3 class="options-section-two">Outros</h3>
             </section>
 
@@ -173,8 +174,9 @@
                     
                     <div> 
                         <h2>Celular</h2>
-                        <select style="width: 60px;">
-                            <option class="option" value="+11">+11</option>
+                        <select style="width: 65px;">
+                            <option class="option" value="">DDD</option>
+                            <option value="+11">+11</option>
                             <option value="+12">+12</option>
                             <option value="+13">+13</option>
                             <option value="+14">+14</option>
@@ -185,7 +187,7 @@
                             <option value="+19">+19</option>
                         </select>
                         
-                        <input type="tel" pattern="[0-9]{5}-[0-9]{4}" required>
+                        <input type="tel" pattern="[0-9]{5}[0-9]{4}" required>
                     </div>
 
                     <div>
@@ -201,15 +203,23 @@
                 </section>
 
                 <section>
-                    <h1 style="margin-top: 100px; text-align: left; letter-spacing: 2px;">Título</h1>
+                    <h1 style="margin-top: 50px; text-align: left; letter-spacing: 2px;">Título</h1>
                     <input type="text">
                     <h2>Mensagem</h2>
-                    <textarea name="" id=""></textarea>
+                    <textarea id="textarea-section"></textarea>
                 </section>
                 
             </section>
             <button id="button-article-four" class="button-article-four" type="submit">Enviar</button>
         </form>
+
+        <div class="mensagem">
+            <img src="/img/email.png" alt="">
+            <h1>Mensagem enviada com sucesso!</h1>
+            <p>Novo Horizonte Ambiental recebeu sua mensagem, entraremos em contato em breve. Caso queira nos ligar consulte o numero no rodapé da pagina</p>
+            <a href="https://www.novohorizonteambiental.com.br" target="_blank">www.novohorizonteambiental.com.br</a>
+            <button id="mensagemFechar" class="mensagemFechar">Fechar</button>
+        </div>
 
     </article>
  
