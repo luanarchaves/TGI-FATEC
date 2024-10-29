@@ -295,7 +295,15 @@ body{
 
 }
 
+.carrosel-container {
+    position: relative;
+    width: 100%;
+    /* height: 100%; */
+    margin-bottom: 30px;
+}
+
 .carrosel{
+    position: relative;
     display: flex;
     flex-direction: row;
     overflow-x: auto;
@@ -305,6 +313,41 @@ body{
     height: 100%;
     margin-bottom: 30px;
 
+}
+
+button.prev, button.next {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #78c942cd;
+    line-height: normal;
+    border: none;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem 1.1225rem;
+    border-radius: 100%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5),
+                -5px -5px 20px var(--color-lightgreen);
+    cursor: pointer;
+    z-index: 1;
+}
+
+button.prev:hover, button.next:hover {
+    background-color: white;
+    color: #4E9103;
+    top: (50% - 20px);
+}
+
+button.prev {
+    left: 1%;
+}
+
+button.next {
+    right: 1%;
 }
 
 .carrosel::-webkit-scrollbar{
@@ -361,7 +404,7 @@ body{
     width: 100%;
     height: auto;
     background-color: #00242C;
-   
+
 }
 
 .article-four form{
@@ -411,7 +454,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     width: 90%;
     margin-bottom: 50px;
 }
@@ -499,7 +542,7 @@ body{
     margin-bottom: 25px;
     font-size: 1.2rem;
     font-weight: normal;
-    
+
 }
 
 .tel-pron-section{
@@ -584,7 +627,7 @@ body{
     width: 100%;
     left: 0;
     margin-bottom: -10px;
-    background-color: #00242C; 
+    background-color: #00242C;
 }
 
 

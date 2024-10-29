@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOME | Novo Horizonte </title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css" >
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
@@ -65,7 +66,7 @@
 
         <article class="article-two">
 
-            <section class="section-left"> 
+            <section class="section-left">
                 <div class="element-section-left"></div>
             </section>
 
@@ -89,8 +90,10 @@
         <header>
             <h1>Nossos Serviços</h1>
         </header>
+        <section class="carrosel-container">
 
-        <section class="carrosel">
+            <button id="button-left" class="prev">&#10094;</button>
+            <section class="carrosel">
                 <div class="card-carrosel" id="card-one">
                     <p>Disponibilização dos mais diversos coletores para atendimento de praticamente todos os resíduos gerados pelas empresas.</p>
                     <img src="" alt="">
@@ -114,13 +117,14 @@
                     <img src="" alt="">
                     <h2>Gerenciamento</h2>
                 </div>
-
+            </section>
+            <button id="button-right" class="next">&#10095;</button>
         </section>
 
     </article>
 
     <article class="article-four">
-        
+
         <form>
             <h1 style="font-size: 2.3rem; margin: 50px 0px;" >Contato</h1>
             <h1>Motivo do contato</h1>
@@ -146,7 +150,7 @@
                     <p>Orçamento</p>
                 </div>
             </section>
-            
+
             <h1>Como nos conheceu?</h1>
             <section class="form-section-two">
                 <h3 class="options-section-two">Google</h3>
@@ -167,12 +171,12 @@
                     <h2>Nome completo</h2>
                     <input type="text">
                     <h2>E-mail</h2>
-                    <input type="email">    
+                    <input type="email">
                 </section>
 
                 <section class="tel-pron-section">
-                    
-                    <div> 
+
+                    <div>
                         <h2>Celular</h2>
                         <select style="width: 65px;">
                             <option class="option" value="">DDD</option>
@@ -186,7 +190,7 @@
                             <option value="+18">+18</option>
                             <option value="+19">+19</option>
                         </select>
-                        
+
                         <input type="tel" pattern="[0-9]{5}[0-9]{4}" required>
                     </div>
 
@@ -208,7 +212,7 @@
                     <h2>Mensagem</h2>
                     <textarea id="textarea-section"></textarea>
                 </section>
-                
+
             </section>
             <button id="button-article-four" class="button-article-four" type="submit">Enviar</button>
         </form>
@@ -222,7 +226,7 @@
         </div>
 
     </article>
- 
+
     <img class="img-article-five" src="img/img-footer.png" alt="">
 
 
