@@ -1,0 +1,6 @@
+@media screen and (max-width: 768px) {
+	button.prev, button.next
+  {
+	display: none;
+  }
+}
