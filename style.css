@@ -334,6 +334,8 @@ button.prev, button.next {
                 -5px -5px 20px var(--color-lightgreen);
     cursor: pointer;
     z-index: 1;
+    height: 60px;
+    width: 60px;
 }
 
 button.prev:hover, button.next:hover {
@@ -439,15 +441,18 @@ button.next {
     height: 100px;
     background-color: #79C942;
     border-radius: 100%;
-    cursor: pointer;
     box-shadow: 0px 0px 1px rgba(0, 0, 0, 2);
-
+    cursor: pointer;
 }
 
 .input img{
     width: 50%;
+   
 }
 
+.input:hover{
+    /* quando o botao de orçamento for clicado o icone dele vira uma seta */
+}
 
 
 .form-section-two{
