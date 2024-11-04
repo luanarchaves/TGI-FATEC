@@ -6,6 +6,7 @@
 
   body{
     z-index: 1;
+    overflow-x: hidden !important;
   }
 
   .nav-top{
@@ -55,4 +56,51 @@
     color: black;
 
   }
+
+  .article-main{
+    height: auto;
+    padding-bottom: 50px;
+    width: 100vw;
+  }
+
+  .article-main h1{
+    font-size: 2.5rem;
+    width: 50%;
+  }
+
+  .info-article-main{
+    padding: 30px;
+  }
+
+  .article-two{
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    width: 50%;
+    justify-content: center;
+    min-height: 45vh;
+    padding: 30px;
+    width: 100%;
+
+  }
+
+  .section-left{
+    display: none;
+  }
+
+
+  .section-right{
+    width: 90%;    
+  }
+
+
+  .article-three{
+    min-height: 50vh;
+  }
+
+  .form-section-one{
+    flex-wrap: wrap;
+  }
+
+
 }
