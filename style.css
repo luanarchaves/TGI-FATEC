@@ -447,7 +447,7 @@ button.next {
 
 .input img{
     width: 50%;
-   
+
 }
 
 .input:hover{
@@ -480,8 +480,23 @@ button.next {
 
 }
 
-.mensagem{
-    display: none;
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+    z-index: 999; /* Certifique-se de que o overlay fique abaixo do pop-up */
+    display: none; /* Inicialmente escondido */
+}
+
+.mensagem {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
@@ -491,10 +506,9 @@ button.next {
     border-radius: 10px;
     padding: 30px 50px;
     text-align: center;
-
-    margin-top: 77%;
-    margin-left: 35%;
-    /* precisa centralizar na tela, na parte que o usuario estiver */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000; /* Certifique-se de que o pop-up fique acima do overlay */
+    display: none; /* Inicialmente escondido */
 }
 
 .mensagem h1{

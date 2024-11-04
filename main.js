@@ -14,18 +14,14 @@ document.addEventListener("DOMContentLoaded", function () {
 const buttonLeft = document.getElementById("button-left");
 const buttonRight = document.getElementById("button-right");
 
-function movementCarrossel(direction)
-{
+function movementCarrossel(direction) {
   const carousel = document.querySelector(".carrosel");
   const items = document.querySelectorAll(".carrosel .card-carrosel");
   const item = items[0];
-  const itemLeft = item.offsetLeft + item.clientWidth / 2 - carousel.clientWidth / 2;
-  if (direction == "left")
-    carousel.scrollLeft -= itemLeft;
-
-  else
-    carousel.scrollLeft += itemLeft;
-
+  const itemLeft =
+    item.offsetLeft + item.clientWidth / 2 - carousel.clientWidth / 2;
+  if (direction == "left") carousel.scrollLeft -= itemLeft;
+  else carousel.scrollLeft += itemLeft;
 }
 
 buttonLeft.addEventListener("click", function () {
@@ -35,11 +31,11 @@ buttonRight.addEventListener("click", function () {
   movementCarrossel("left");
 });
 
-function mudarFundoSectionTwo(item){
-  let situação = false
+function mudarFundoSectionTwo(item) {
+  let situação = false;
 
-  item.forEach(option => {
-    option.addEventListener("click", function() {
+  item.forEach((option) => {
+    option.addEventListener("click", function () {
       if (situação == false) {
         option.style.background = "#79C942";
       } else {
@@ -50,52 +46,48 @@ function mudarFundoSectionTwo(item){
   });
 }
 
+const option_section_two = document.querySelectorAll(".options-section-two");
+const input_section_two = document.querySelectorAll(".input");
 
-const option_section_two = document.querySelectorAll('.options-section-two')
-const input_section_two = document.querySelectorAll('.input')
+mudarFundoSectionTwo(option_section_two);
+mudarFundoSectionTwo(input_section_two);
 
-mudarFundoSectionTwo(option_section_two)
-mudarFundoSectionTwo(input_section_two)
+function limparForm() {
+  button.addEventListener("click", function (event) {
+    event.preventDefault();
 
+    input.forEach((inputs) => {
+      inputs.value = "";
+    });
 
-function limparForm(){
-  button.addEventListener("click", function(event) {
-    event.preventDefault()
+    select.forEach((selectOption) => {
+      selectOption.value = "";
+    });
 
-    input.forEach(inputs =>{
-      inputs.value = ""
-    })
-
-    select.forEach(selectOption => {
-      selectOption.value = ""
-    })
-
-    textarea.value = ""
-
-  })
-
+    textarea.value = "";
+  });
 }
 
-function mostrarMensagem(){
-  const mensagem = document.getElementsByClassName('mensagem')
-  const fecharMensagem = document.getElementById('mensagemFechar')
+function mostrarMensagem() {
+  const overlay = document.getElementById("overlay");
+  const mensagem = document.getElementById("mensagem");
+  const fecharMensagem = document.getElementById("mensagemFechar");
 
-  button.addEventListener("click", function(){
-      mensagem[0].style.position = "absolute";
-      mensagem[0].style.display = "flex"
-  })
+  button.addEventListener("click", function () {
+    overlay.style.display = "block";
+    mensagem.style.display = "flex";
+  });
 
-  fecharMensagem.addEventListener("click", function(){
-    mensagem[0].style.display = "none"
-  })
+  fecharMensagem.addEventListener("click", function () {
+    overlay.style.display = "none";
+    mensagem.style.display = "none";
+  });
 }
 
+const button = document.getElementById("button-article-four");
+const input = document.querySelectorAll("input");
+const select = document.querySelectorAll("select");
+const textarea = document.getElementById("textarea-section");
 
-
-const button = document.getElementById('button-article-four')
-const input = document.querySelectorAll('input')
-const select = document.querySelectorAll('select')
-const textarea = document.getElementById('textarea-section')
-
-limparForm()
-mostrarMensagem()
+limparForm();
+mostrarMensagem();
