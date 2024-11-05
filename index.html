@@ -172,25 +172,28 @@
 
                 <section class="tel-pron-section">
 
-                    <div>
+                    <div class="tel-pron-area">
                         <h2>Celular</h2>
-                        <select style="width: 65px;">
-                            <option class="option" value="">DDD</option>
-                            <option value="+11">+11</option>
-                            <option value="+12">+12</option>
-                            <option value="+13">+13</option>
-                            <option value="+14">+14</option>
-                            <option value="+15">+15</option>
-                            <option value="+16">+16</option>
-                            <option value="+17">+17</option>
-                            <option value="+18">+18</option>
-                            <option value="+19">+19</option>
-                        </select>
+                        <div class="tel-input-area">
+                            <select style="">
+                                <option class="option" value="">DDD</option>
+                                <option value="+11">+11</option>
+                                <option value="+12">+12</option>
+                                <option value="+13">+13</option>
+                                <option value="+14">+14</option>
+                                <option value="+15">+15</option>
+                                <option value="+16">+16</option>
+                                <option value="+17">+17</option>
+                                <option value="+18">+18</option>
+                                <option value="+19">+19</option>
+                            </select>
+    
+                            <input type="tel" pattern="[0-9]{5}[0-9]{4}" required>
 
-                        <input type="tel" pattern="[0-9]{5}[0-9]{4}" required>
+                        </div>
                     </div>
 
-                    <div>
+                    <div class="pronome-area">
                         <h2>Pronome</h2>
                         <select class="input-pronome">
                             <option class="option" value="">Selecione</option>
@@ -202,11 +205,17 @@
 
                 </section>
 
-                <section>
-                    <h1 style="margin-top: 50px; text-align: left; letter-spacing: 2px;">Título</h1>
-                    <input type="text">
-                    <h2>Mensagem</h2>
-                    <textarea id="textarea-section"></textarea>
+                <section class="mensagem-section">
+                    <div>
+
+                        <h1 class="mensagem-label-title">Título</h1>
+                        <input class="mensagem-title" type="text">
+                    </div>
+                    <div>
+                        <h2>Mensagem</h2>
+                        <textarea class="mensagem-texto" id="textarea-section"></textarea>
+
+                    </div>
                 </section>
 
             </section>

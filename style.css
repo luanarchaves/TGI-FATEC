@@ -538,22 +538,27 @@ button.next {
 }
 
 .form-section-three{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 87%;
+
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    width: 700px;
+    min-width: 300px;
+    max-width: 100%;
+    /* border: 1px solid white; */
+    margin: 0 auto;
     text-align: left;
 }
 
 .form-section-three input{
-    width: 660px;
+    width: 97%;
     height: 40px;
     border-radius: 10px;
     border: none;
     background-color: #EBEBEB;
     font-size: 1rem;
     font-family: arial;
-    padding-left: 20px;
+    padding-left: 1rem;
     margin-bottom: 20px;
 }
 
@@ -564,12 +569,30 @@ button.next {
 
 }
 
+/* SECTION DO CELULAR - PRONOME */
 .tel-pron-section{
     display: flex;
     flex-direction: row;
-    width: 690px;
     justify-content: space-between;
-    padding-left: 10px;
+}
+
+/* Area do celular */
+.tel-pron-section .tel-pron-area
+{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+/* Area do pronome */
+.pronome-area
+{
+    width: 40%;
+}
+
+.tel-input-area
+{
+    display: flex;
 }
 
 .tel-pron-section select{
@@ -588,13 +611,13 @@ button.next {
 }
 
 .input-pronome{
-    width: 250px;
+    width: 100%;
     font-size: 1rem;
 }
 
 .form-section-three textarea{
     resize: none;
-    width: 650px;
+    /* width: 650px; */
     height: 200px;
     border-radius: 10px;
     border: none;
@@ -611,7 +634,42 @@ button.next {
 }
 
 
+.mensagem-section
+{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid white; */
+    width: 700px;
+}
 
+.mensagem-section .mensagem-label-title
+{
+    margin-top: 50px; 
+    text-align: left; 
+    letter-spacing: 2px;
+}
+
+.form-section-three 
+    .mensagem-section 
+    .mensagem-title
+{
+    margin: 0;
+
+}
+
+.form-section-three 
+    .mensagem-section 
+    .mensagem-title
+{
+    width: 97%;
+}
+
+.form-section-three
+    .mensagem-section
+    .mensagem-texto
+{
+    width: 95%;
+}
 
 .button-article-four{
     padding: 15px 40px 15px 40px;

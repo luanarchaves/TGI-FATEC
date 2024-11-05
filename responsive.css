@@ -55,4 +55,40 @@
     color: black;
 
   }
+
+  .article-two
+  {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .section-left
+  {
+    display: none;
+  }
+  .section-right
+  {
+    padding: 0;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+
+  .form-section-one
+  {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .tel-pron-section
+  {
+    flex-direction: column;
+  }
+
+  /* .tel-pron-section div
+  {
+    width: 100vw;
+  } */
 }
