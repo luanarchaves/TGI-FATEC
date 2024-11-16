@@ -6,7 +6,8 @@
 
   body{
     z-index: 1;
-    overflow-x: hidden !important;
+    overflow-x: hidden!important;
+    width: 100%;
   }
 
   .nav-top{
@@ -39,9 +40,9 @@
     padding-right: 20px;
   }
 
-.info-nav-main li#li4, .info-nav-main li#li5 {
-    display: none;
-}
+  .info-nav-main li#li4, .info-nav-main li#li5 {
+      display: none;
+  }
 
   .img-nav-main{
     display: none;
@@ -74,14 +75,17 @@
 
   .article-two{
     flex-direction: column;
-    padding: 0;
-    margin: 0;
+    padding: 0!important;
+    margin: 0!important;
     width: 50%;
     justify-content: center;
     min-height: 45vh;
     padding: 30px;
     width: 100%;
+  }
 
+  .article-two p{
+    width: 90%;
   }
 
   .section-left{
@@ -90,7 +94,7 @@
 
 
   .section-right{
-    width: 90%;    
+    width: 90%;   
   }
 
 
@@ -99,8 +103,70 @@
   }
 
   .form-section-one{
-    flex-wrap: wrap;
+    flex-wrap: wrap!important;
   }
 
+  .article-four{
+    width: 100%;
+  }
+
+  .section-two-article-five{
+    flex-direction: column;
+    padding-bottom: 20%;
+  }
+
+  .form-section-three {
+    width: 100%;
+  }
+
+  .form-section-three input,
+  .form-section-three select {
+    width: 90%;
+  }
+
+  .tel-pron-section {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+
+  }
+
+  .tel-pron-section h2{
+    margin-right: 20px;
+    
+  }
+
+  .fone-area{
+    display: flex;
+    width: 90vw;
+    flex-wrap: wrap;
+
+  }
+
+  .fone-area input{
+    width: 50vw;
+
+  }
+
+  .section-text{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .prom-area{
+    display: flex;
+    width: 80vw;
+  }
+
+  #title-input{
+    width: 80vw;
+  }
+
+  #textarea-section{
+    width: 80vw;
+  }
 
 }

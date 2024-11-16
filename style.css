@@ -287,12 +287,11 @@ body{
     flex-direction: column;
     justify-content: space-evenly;
     min-height: 95vh;
-    color: black;
 }
 
 .article-three h1{
     font-size: 2.3rem;
-
+    color: black;
 }
 
 .carrosel-container {
@@ -445,13 +444,9 @@ button.next {
     cursor: pointer;
 }
 
+
 .input img{
     width: 50%;
-
-}
-
-.input:hover{
-    /* quando o botao de orçamento for clicado o icone dele vira uma seta */
 }
 
 
