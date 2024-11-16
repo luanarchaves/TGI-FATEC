@@ -20,12 +20,11 @@
     background-color: #EBEBEB;
     border-radius: 30px 30px 0px 0px;
     height: 10%;
-    width: 100%;
-    padding-left: 0;
+    width: 100vw;
+    padding-left: 40px;
     justify-content: center;
     z-index: 2;
     box-shadow: 0px 2px 10px black;
-
   }
 
   .info-nav-main a{
@@ -64,9 +63,17 @@
     width: 100vw;
   }
 
+  .p-article{
+    width: 90vw;
+  }
+
+  .button-article-main{
+    flex-wrap: wrap;
+  }
+
   .article-main h1{
     font-size: 2.5rem;
-    width: 50%;
+    width: 100vw;
   }
 
   .info-article-main{
@@ -75,8 +82,7 @@
 
   .article-two{
     flex-direction: column;
-    padding: 0!important;
-    margin: 0!important;
+    padding-left: 40px;
     width: 50%;
     justify-content: center;
     min-height: 45vh;
@@ -145,7 +151,7 @@
   }
 
   .fone-area input{
-    width: 50vw;
+    width: 40vw;
 
   }
 
@@ -167,5 +173,10 @@
 
   #textarea-section{
     width: 80vw;
+  }
+
+  .card-carrosel{
+    min-width: 400px;
+    height: 300px;
   }
 }
