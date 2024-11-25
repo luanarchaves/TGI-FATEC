@@ -1,35 +1,25 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const carousel = document.querySelector(".carrosel");
-  const items = document.querySelectorAll(".carrosel .card-carrosel");
+import carrouselComponent,
+  { insertMovementsListerner,
+    movementCarrossel } from "./components/carrouselComponent.js";
+import headerComponent from "./components/headerComponent.js";
+import mainComponent from "./components/mainComponent.js";
 
-  items.forEach((item) => {
-    item.addEventListener("click", function () {
-      const itemLeft =
-        item.offsetLeft + item.clientWidth / 2 - carousel.clientWidth / 2;
-      carousel.scrollLeft = itemLeft;
-    });
-  });
-});
 
-const buttonLeft = document.getElementById("button-left");
-const buttonRight = document.getElementById("button-right");
 
-function movementCarrossel(direction) {
-  const carousel = document.querySelector(".carrosel");
-  const items = document.querySelectorAll(".carrosel .card-carrosel");
-  const item = items[0];
-  const itemLeft =
-    item.offsetLeft + item.clientWidth / 2 - carousel.clientWidth / 2;
-  if (direction == "left") carousel.scrollLeft -= itemLeft;
-  else carousel.scrollLeft += itemLeft;
-}
+const app = document.getElementById("app");
 
-buttonLeft.addEventListener("click", function () {
-  movementCarrossel("right");
-});
-buttonRight.addEventListener("click", function () {
-  movementCarrossel("left");
-});
+console.log(app);
+app.appendChild(headerComponent());
+app.appendChild(mainComponent());
+app.appendChild(carrouselComponent());
+
+
+
+
+
+insertMovementsListerner();
+
+
 
 function mudarFundoSectionTwo(item) {
   let situação = false;
