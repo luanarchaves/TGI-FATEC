@@ -2,7 +2,7 @@ export default function mainComponent()
 {
 	const main = document.createElement('main');
 	main.innerHTML = `
-	<article class="article-main">
+	<article id="home" class="article-main">
 		<div class="info-article-main">
 			<header>
 				<div>
@@ -21,7 +21,7 @@ export default function mainComponent()
 		</div>
 	</article>
 
-	<article class="article-two">
+	<article id="empresa" class="article-two">
 
 		<section class="section-left">
 			<div class="element-section-left"></div>
@@ -41,5 +41,4 @@ export default function mainComponent()
 
 	</article>`;
 	return main;
-
 }

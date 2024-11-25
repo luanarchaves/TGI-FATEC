@@ -12,11 +12,15 @@
     --font-alata: "Alata", sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .alata-regular {
     font-family: var(--font-alata);
     font-weight: 400;
     font-style: normal;
-  }
+}
 
 
 body{
