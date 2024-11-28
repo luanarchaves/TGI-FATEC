@@ -22,8 +22,8 @@ export default function headerComponent()
                     <li id="li1"><a href="#home">Home</a></li>
                     <li id="li2"><a href="#empresa">Empresa</a></li>
                     <li id="li3"><a href="#servicos">Serviços</a></li>
-                    <li id="li4"><a href="">Produtos</a></li>
-                    <li id="li5"><a href="">Informações</a></li>
+                    <li id="li4"><a href="https://www.novohorizonteambiental.com.br/produtos" target="_blank">Produtos</a></li>
+                    <li id="li5"><a href="https://www.novohorizonteambiental.com.br/informacoes" target="_blank">Informações</a></li>
                 </ul>
             </div>
             <div >
